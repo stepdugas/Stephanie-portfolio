@@ -1,0 +1,326 @@
+/* General Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+/* Matrix Background Styling */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Keeps it behind text */
+}
+
+/* Semi-Transparent Overlay */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darkens background slightly */
+    z-index: -1;
+}
+
+/* Text Styling */
+h1, h2 {
+    color: #00ff00; /* Bright neon green */
+    text-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8); /* Glow effect */
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9); /* Slightly off-white */
+}
+
+/* Glow Effect for Important Text */
+.glow-text {
+    text-shadow: 0px 0px 8px rgba(0, 255, 0, 0.8);
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background: #00ff00; /* Neon green */
+    color: black;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn:hover {
+    background: #008f00; /* Darker green */
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 1);
+    transform: scale(1.1);
+}
+
+/* LinkedIn Button Styling */
+.linkedin-btn {
+    background: #0077b5; /* LinkedIn Blue */
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 119, 181, 0.8);
+}
+
+.linkedin-btn:hover {
+    background: #005582; /* Darker LinkedIn Blue */
+    box-shadow: 0px 0px 20px rgba(0, 119, 181, 1);
+    transform: scale(1.1);
+}
+
+/* Section Spacing */
+section {
+    padding: 50px;
+}
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+.container {
+    padding: 60px 170px;
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* About Section */
+#about .profile-pic {
+    width: 100px;
+    height: 100px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.roles {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.badge {
+    background: rgba(216, 216, 216, 0.5);
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+/* Key Skills */
+#skills {
+    padding: 60px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.skill-card {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+}
+
+/* Projects */
+#projects {
+    padding: 60px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project-card {
+    background: rgba(216, 216, 216, 0.5);
+    padding: 20px;
+    border-radius: 6px;
+    width: 200px;
+}
+
+/* Contact Form */
+#contact {
+    padding: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Initial hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state when scrolled into view */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: -70px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    transition: top 0.3s ease-in-out;
+}
+
+.project-card {
+    background: rgba(216, 216, 216, 0.5);
+    padding: 20px;
+    border-radius: 6px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Puts it behind content */
+    background: black;
+}
+
+#projects-page {
+    text-align: center;
+    padding: 20px;
+    background-color: black; /* Change background to black */
+    min-height: 100vh;
+}
+
+.project {
+    background: #333;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project h2 {
+    color: #fff;
+}
+
+.project p {
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #005f73;
+}
+
+/* Footer */
+footer {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#projects-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text */
+}
